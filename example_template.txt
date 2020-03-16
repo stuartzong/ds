@@ -1,0 +1,12 @@
+new
+genome hg19
+load {{bam}}
+snapshotDirectory {{snapdir}}
+
+{% for pos, fn in positions|zip(snapnames) %}
+goto {{pos}}
+sort position
+snapshot {{fn}}
+{% endfor %}
+
+

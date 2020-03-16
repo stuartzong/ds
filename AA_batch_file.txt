@@ -1,0 +1,15 @@
+new
+genome hg19
+load test.bam
+snapshotDirectory /projects/trans_scratch/validations/workspace/szong/development/ds/
+
+goto 1:10-20
+sort position
+snapshot a.png
+goto 2:30-40
+sort position
+snapshot b.png
+goto 6:50-100
+sort position
+snapshot c.png
+
